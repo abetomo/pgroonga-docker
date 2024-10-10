@@ -591,12 +591,11 @@ Those images based on [postgres](https://hub.docker.com/_/postgres) and could us
 
 ## How to use
 
-Here is a simple example for use by [docker-compose](https://github.com/docker/compose).
+Here is a simple example for use by [Docker Compose](https://docs.docker.com/compose/).
 
-Create `docker-compose.yml` with lines below.
+Create `compose.yaml` with lines below.
 
-```docker-compose
-version: '2'
+```yaml
 services:
   PGroonga:
     image: groonga/pgroonga:latest
@@ -608,7 +607,7 @@ services:
       POSTGRES_USER: PGroonga
 ```
 
-now You can use `docker-compose up -d` command to start service.
+now You can use `docker compose up -d` command to start service.
 by use any database manage tool to connect to database `PGroonga`,exceute command below to active PGroonga extension
 
 ```SQL
